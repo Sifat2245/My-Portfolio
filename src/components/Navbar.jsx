@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 import { useState, useEffect } from 'react';
 import { Menu, X, Home, User, Code, Mail, Settings } from 'lucide-react';
 
