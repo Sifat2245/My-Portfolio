@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import AboutMe from '../components/AboutMe';
 
 
 const LandingPage = () => {
@@ -8,6 +9,7 @@ const LandingPage = () => {
         <div className='min-h-screen'>
            <Navbar></Navbar>
            <Hero></Hero>
+           <AboutMe></AboutMe>
         </div>
     );
 };

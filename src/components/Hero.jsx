@@ -85,7 +85,7 @@ const Hero = () => {
 
           {/* Main heading with staggered blur */}
           <div className={`stagger-blur ${isVisible ? "animate" : ""}`}>
-            <h1 className="text-6xl lg:text-8xl font-display font-bold leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight">
               <span className="gradient-text">Hi, I'm</span>
             </h1>
             <h1 className="text-6xl lg:text-8xl font-display font-bold leading-tight text-[#ffebf3]">
@@ -108,7 +108,7 @@ const Hero = () => {
           >
             <TypeAnimation
               sequence={[
-                "MEARN Stack Developer",
+                "MERN Stack Developer",
                 2000,
                 "Full Stack Developer",
                 2000,

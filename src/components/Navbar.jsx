@@ -1,8 +1,18 @@
-import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
-import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Code, Mail, Settings } from 'lucide-react';
+import { motion } from "framer-motion"; // eslint-disable-line no-unused-vars
+import { useState, useEffect } from "react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Code,
+  Mail,
+  Settings,
+  Braces,
+  GraduationCap,
+} from "lucide-react";
 
-export default function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -10,16 +20,17 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home', icon: Home },
-    { name: 'About', href: '#about', icon: User },
-    { name: 'Projects', href: '#projects', icon: Code },
-    { name: 'Contact', href: '#contact', icon: Mail },
-    { name: 'Admin', href: '#admin', icon: Settings },
+    { name: "Home", href: "#home", icon: Home },
+    { name: "About", href: "#about", icon: User },
+    { name: "Skills", href: "#skills", icon: Braces },
+    { name: "Education", href: "#education", icon: GraduationCap },
+    { name: "Projects", href: "#projects", icon: Code },
+    { name: "Contact", href: "#contact", icon: Mail },
   ];
 
   return (
@@ -28,7 +39,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? 'glass-effect' : 'bg-transparent'
+        scrolled ? "glass-effect" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,9 +80,9 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <motion.div
           initial={{ opacity: 0, height: 0 }}
-          animate={{ 
-            opacity: isOpen ? 1 : 0, 
-            height: isOpen ? 'auto' : 0 
+          animate={{
+            opacity: isOpen ? 1 : 0,
+            height: isOpen ? "auto" : 0,
           }}
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
@@ -94,4 +105,6 @@ export default function Navbar() {
       </div>
     </motion.nav>
   );
-}
+};
+
+export default Navbar;
