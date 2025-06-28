@@ -48,7 +48,7 @@ export default function Navbar() {
                 href={item.href}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center space-x-2 text-text/80 hover:text-primary transition-colors duration-200"
+                className="flex items-center space-x-2 text-[#ffebf3]/80 hover:text-[#8c0829] transition-colors duration-200"
               >
                 <item.icon size={18} />
                 <span>{item.name}</span>
@@ -76,14 +76,14 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
         >
-          <div className="py-4 space-y-4">
+          <div className="py-4 space-y-4 bg-[#1c1c1c]">
             {navItems.map((item) => (
               <motion.a
                 key={item.name}
                 href={item.href}
                 whileHover={{ x: 10 }}
                 onClick={() => setIsOpen(false)}
-                className="flex items-center space-x-3 text-text/80 hover:text-primary transition-colors duration-200 p-2 rounded-lg hover:bg-primary/10"
+                className="flex items-center space-x-3 text-[#ffebf3]/80 hover:text-[#8c0829] transition-colors duration-200 p-2 rounded-lg hover:bg-[#8c0829]/10"
               >
                 <item.icon size={20} />
                 <span>{item.name}</span>
