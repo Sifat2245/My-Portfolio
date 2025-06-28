@@ -134,10 +134,7 @@ const Hero = () => {
             className="space-y-4"
           >
             <p className="text-lg text-[#ffebf3]/80 leading-relaxed max-w-xl blur-text-hover">
-              Passionate developer with{" "}
-              <span className="text-primary font-semibold">1+ year</span> of
-              experience crafting beautiful, responsive web applications using
-              modern technologies.
+              Passionate about crafting modern, responsive web applications that blend clean code with engaging user experiences.
             </p>
             <p className="text-base text-[#ffebf3]/70 leading-relaxed max-w-xl blur-text-hover">
               Specialized in{" "}

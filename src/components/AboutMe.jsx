@@ -17,7 +17,7 @@ const AboutMe = () => {
 
   return (
 
-    <section id="about" ref={ref} className="py-24 px-4 relative overflow-hidden">
+    <section id="about" ref={ref} className="py-32 px-4 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 right-10 w-64 h-64 bg-[#8c0829]/5 rounded-full filter blur-3xl animate-float"></div>
@@ -33,7 +33,7 @@ const AboutMe = () => {
           className="text-center mb-20"
         >
           <div className={`blur-reveal ${isVisible ? 'in-view' : ''}`}>
-            <p className="text-[#8c0829] font-mono text-xl mb-4 tracking-wide">
+            <p className="text-[#8c0829] font-mono text-2xl mb-4 tracking-wide">
               {'<'} About Me {'/>'} 
             </p>
           </div>
@@ -44,7 +44,7 @@ const AboutMe = () => {
           <div className={`stagger-blur ${isVisible ? 'animate' : ''} max-w-4xl mx-auto`}>
         
             <p className="text-lg text-[#ffebf3]/70 leading-relaxed mt-4 blur-text-hover">
-            I enjoy working with the <span className="font-mono text-[#8c0829]">MERN</span> stack and take pride in writing maintainable code, collaborating with others, and continuously learning to improve my skills. My goal is to contribute meaningfully to every project I’m part of, and to always stay curious and open to new challenges.
+            I enjoy working with the <span className="font-mono text-[#8c0829] text-xl">MERN</span> stack and take pride in writing maintainable code, collaborating with others, and continuously learning to improve my skills. My goal is to contribute meaningfully to every project I’m part of, and to always stay curious and open to new challenges.
              
             </p>
           </div>
@@ -56,7 +56,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 60, filter: 'blur(8px)' }}
           animate={isInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
           transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="glass-card p-12 rounded-3xl max-w-6xl mx-auto card-hover"
+          className="glass-card p-12 rounded-3xl max-w-6xl mx-auto card-hover bg-[#ffebf3]/3"
         >
           <div className="text-center mb-10">
             <div className="flex items-center justify-center space-x-3 mb-6">
