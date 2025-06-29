@@ -1,6 +1,6 @@
-import { useInView,motion } from "framer-motion";
+import { useInView, motion } from "framer-motion";// eslint-disable-line no-unused-vars
 import React, { useEffect, useRef, useState } from "react";
-import { Code, Database, Server, Smartphone, Globe, Zap, Terminal, Palette } from 'lucide-react';
+import { Terminal, Palette } from 'lucide-react';
 
 const AboutMe = () => {
   const ref = useRef(null);

@@ -7,8 +7,7 @@ import {
   Smartphone,
   Globe,
   Zap,
-  Terminal,
-  Palette,
+  
 } from "lucide-react";
 
 const Skills = () => {

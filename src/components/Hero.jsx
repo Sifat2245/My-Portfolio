@@ -13,12 +13,12 @@ import { TypeAnimation } from "react-type-animation";
 import profileImage from "../assets/1699810164696-removebg.png";
 
 const Hero = () => {
+
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/Sifat2245", target: '_blank', label: "GitHub" },
