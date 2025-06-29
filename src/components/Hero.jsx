@@ -19,14 +19,16 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
+
   const socialLinks = [
-    { icon: Github, href: "https://github.com/Sifat2245", label: "GitHub" },
+    { icon: Github, href: "https://github.com/Sifat2245", target: '_blank', label: "GitHub" },
     {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/saifuddin-ahmed-sifat/",
+      target: '_blank',
       label: "LinkedIn",
     },
-    { icon: Mail, href: "#contact", label: "Email" },
+    { icon: Mail, href: "#contact",  label: "Email" },
   ];
 
   return (
@@ -153,7 +155,22 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="flex space-x-6"
           >
-            {socialLinks.map((social, index) => (
+            {socialLinks.map((social, index) =>
+            social.label ==='Email' ? (
+              <motion.a
+                key={social.label}
+                href={social.href}
+                whileHover={{ scale: 1.2, y: -8, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#8c0829]/10 transition-all duration-300 group card-hover"
+                style={{ transitionDelay: `${index * 0.1}s` }}
+              >
+                <social.icon
+                  size={24}
+                  className="text-[#ffebf3]/70 group-hover:text-[#8c0829] transition-colors duration-300"
+                />
+              </motion.a>
+            ) : (
               <motion.a
                 key={social.label}
                 href={social.href}
@@ -168,7 +185,8 @@ const Hero = () => {
                   className="text-[#ffebf3]/70 group-hover:text-[#8c0829] transition-colors duration-300"
                 />
               </motion.a>
-            ))}
+            )
+          )}
           </motion.div>
 
           {/* CTA Buttons with enhanced styling */}

@@ -88,7 +88,7 @@ const Skills = () => {
     <div
       id="skills"
       ref={ref}
-      className="pb-32 max-w-7xl mx-auto px-4 relative overflow-hidden"
+      className="pb-24 max-w-7xl mx-auto px-4 relative overflow-hidden"
     >
       <div className={`blur-reveal ${isVisible ? "in-view" : ""} text-center`}>
         <p className="text-[#8c0829] font-mono text-2xl mb-4 tracking-wide">

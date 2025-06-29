@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ExternalLink, Github, Calendar } from "lucide-react";
-import { useInView, motion } from "framer-motion";
+import { useInView, motion } from "framer-motion"; // eslint-disable-line no-unused-vars
 
 const MyProjects = () => {
   const ref = useRef(null);
@@ -88,7 +88,7 @@ const MyProjects = () => {
     <section
       id="projects"
       ref={ref}
-      className="pb-20 px-4 relative overflow-hidden"
+      className="pb-32 px-4 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -100,8 +100,8 @@ const MyProjects = () => {
           <h2 className="text-4xl lg:text-6xl font-display font-bold gradient-text mb-6">
             My Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-          <p className="text-xl text-text/80 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-gradient-to-r from-[#8c0829] to-[#7b1e3b] mx-auto mb-8"></div>
+          <p className="text-xl text-[#ffebf3]/80 max-w-3xl mx-auto leading-relaxed">
             Explore my portfolio of full-stack applications and frontend
             projects that showcase my expertise in modern web development
             technologies.
@@ -123,8 +123,8 @@ const MyProjects = () => {
               onClick={() => setSelectedFilter(category)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
                 selectedFilter === category
-                  ? "bg-primary text-text"
-                  : "glass-effect text-text/70 hover:text-primary hover:bg-primary/10"
+                  ? "bg-[#8c0829] text-[#ffebf3]"
+                  : "glass-effect text-[#ffebf3]/70 hover:text-[#8c0829] hover:bg-[#8c0829]/10"
               }`}
             >
               {category}
@@ -139,12 +139,12 @@ const MyProjects = () => {
           animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}
               whileHover={{ scale: 1.02, y: -10 }}
-              className="glass-effect rounded-2xl overflow-hidden hover:bg-primary/5 transition-all duration-300 group"
+              className="glass-effect rounded-2xl overflow-hidden hover:bg-[#8c0829]/5 transition-all duration-300 group"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -152,24 +152,24 @@ const MyProjects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-4 right-4 bg-primary/90 text-text px-3 py-1 rounded-full text-sm font-medium">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1c]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-4 right-4 bg-[#8c0829]/90 text-[#ffebf3] px-3 py-1 rounded-full text-sm font-medium">
                   {project.category}
                 </div>
               </div>
 
               <div className="p-6 space-y-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-display font-bold text-text group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-display font-bold text-[#ffebf3] group-hover:text-[#8c0829] transition-colors">
                     {project.title}
                   </h3>
-                  <div className="flex items-center text-text/60 text-sm">
+                  <div className="flex items-center text-[#ffebf3]/60 text-sm">
                     <Calendar size={16} className="mr-1" />
                     {new Date(project.date).toLocaleDateString()}
                   </div>
                 </div>
 
-                <p className="text-text/80 leading-relaxed">
+                <p className="text-[#ffebf3]/80 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -177,7 +177,7 @@ const MyProjects = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-background/50 rounded-full text-sm text-text/70 border border-text/10"
+                      className="px-3 py-1 bg-[#1c1c1c]/50 rounded-full text-sm text-[#ffebf3]/70 border border-text/10"
                     >
                       {tech}
                     </span>
@@ -190,7 +190,7 @@ const MyProjects = () => {
                     target="_black"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center space-x-2 px-4 py-2 glass-effect rounded-lg hover:bg-primary/20 transition-all duration-200"
+                    className="flex items-center space-x-2 px-4 py-2 glass-effect rounded-lg hover:bg-[#8c0829]/20 transition-all duration-200"
                   >
                     <Github size={20} />
                     <span>Code</span>
@@ -200,7 +200,7 @@ const MyProjects = () => {
                     target="_black"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center space-x-2 px-4 py-2 bg-primary hover:bg-primary/90 text-text rounded-lg transition-all duration-200"
+                    className="flex items-center space-x-2 px-4 py-2 bg-[#8c0829] hover:bg-[#8c0829]/90 text-[#ffebf3] rounded-lg transition-all duration-200"
                   >
                     <ExternalLink size={20} />
                     <span>Live Demo</span>
