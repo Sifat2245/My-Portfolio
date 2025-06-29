@@ -56,7 +56,7 @@ const LoadingSpinner = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
-            MEARN Stack Developer
+            MERN Stack Developer
           </motion.p>
         </motion.div>
 
