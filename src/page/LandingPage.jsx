@@ -4,6 +4,8 @@ import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import Skills from '../components/Skills';
 import Footer from '../components/Footer';
+import MyProjects from '../components/MyProjects';
+import Contact from '../components/Conntact';
 
 
 const LandingPage = () => {
@@ -13,6 +15,8 @@ const LandingPage = () => {
            <Hero></Hero>
            <AboutMe></AboutMe>
            <Skills></Skills>
+           <MyProjects></MyProjects>
+           <Contact></Contact>
            <Footer></Footer>
         </div>
     );

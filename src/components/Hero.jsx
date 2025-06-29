@@ -220,7 +220,7 @@ const Hero = () => {
           >
             {/* Profile container */}
             <div className="relative p-3 bg-background rounded-3xl">
-              <div className="w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-secondary/15 to-accent/20 flex items-center justify-center relative overflow-hidden transition-all duration-500 group-hover:from-primary/30 group-hover:via-secondary/25 group-hover:to-accent/30 border-3">
+              <div className="w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem] rounded-full bg-gradient-to-br from-primary/20 via-secondary/15 to-accent/20 flex items-center justify-center relative overflow-hidden transition-all duration-500 group-hover:from-primary/30 group-hover:via-secondary/25 group-hover:to-accent/30 border-2">
                 {/* Profile Image with ring border */}
                 <img
                   src={profileImage}
