@@ -48,7 +48,7 @@ const LoadingSpinner = () => {
               ease: "linear" 
             }}
           >
-            SIFAT
+            {'<'} SIFAT {'/>'} 
           </motion.h1>
           <motion.p 
             className="text-text/70 text-lg"

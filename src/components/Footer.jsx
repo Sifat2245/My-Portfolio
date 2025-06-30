@@ -11,7 +11,7 @@ const Footer = () => {
             whileHover={{ scale: 1.05 }}
             className="font-orbitron font-bold text-xl gradient-text"
           >
-            SIFAT.DEV
+            SIFAT
           </motion.div>
 
         {/* Center - Navigation or Quick Links (Optional) */}

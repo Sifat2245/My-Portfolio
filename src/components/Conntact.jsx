@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion"; // eslint-disable-line no-unused-vars
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, MessageCircleMore, MapPin, Send, CheckCircle } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -41,16 +41,16 @@ const Contact = () => {
       action: "mailto:mdsaifuddinahmed360@gmail.com",
     },
     {
-      icon: Phone,
-      title: "Phone",
+      icon: MessageCircleMore,
+      title: "Whatsapp",
       content: "+88 01903-321075",
-      action: "tel:+8801903321075",
+      action: "whatsapp: +88 01903-321075",
     },
     {
       icon: MapPin,
       title: "Location",
       content: "Narayanganj, Dhaka, Bangladesh",
-      action: "#",
+      action: "https://www.google.com/maps/place/Narayanganj/@23.638887,90.4102529,12z/data=!3m1!4b1!4m6!3m5!1s0x3755b10812a520a3:0x6d3af4457bec4c90!8m2!3d23.642881!4d90.488286!16zL20vMDZtNTNj?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D",
     },
   ];
 
