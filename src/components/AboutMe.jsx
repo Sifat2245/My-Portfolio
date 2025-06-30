@@ -52,11 +52,12 @@ const AboutMe = () => {
 
      
         {/* Journey Section */}
-        <motion.div
+          <motion.div
           initial={{ opacity: 0, y: 60, filter: 'blur(8px)' }}
           animate={isInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
           transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="glass-card p-12 rounded-3xl max-w-6xl mx-auto card-hover bg-[#ffebf3]/3"
+          id="animate-border"
+          className="glass-card p-12 rounded-3xl max-w-6xl mx-auto card-hover bg-[#ffebf3]/3 animate-border"
         >
           <div className="text-center mb-10">
             <div className="flex items-center justify-center space-x-3 mb-6">
@@ -104,7 +105,7 @@ const AboutMe = () => {
             ))}
           </div>
         </motion.div>
-      </div>
+        </div>
     </section>
   )
 };

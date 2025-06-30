@@ -34,25 +34,14 @@ const MyProjects = () => {
     },
     {
       id: 3,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with data visualization, scheduled posting, and engagement tracking.',
-      image: 'https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=600',
-      category: 'Full Stack',
-      tech: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
-      github: '#',
-      live: '#',
-      date: '2024-03-10'
-    },
-    {
-      id: 4,
-      title: 'Weather App',
-      description: 'Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Chakri Lagbe – Job Portal Web Application',
+      description: 'Chakri Lagbe is a job portal designed to connect job seekers with employers. Whether you are searching for your first job or looking to switch careers, Chakri Lagbe simplifies the process of job discovery and application.',
+      image: 'https://i.ibb.co/gFTFp8gZ/Screenshot-2025-05-07-024932.png',
       category: 'Frontend',
-      tech: ['React', 'APIs', 'CSS3', 'Responsive Design'],
-      github: '#',
-      live: '#',
-      date: '2024-04-05'
+      tech: ['React', 'Tailwind', 'Javascript'],
+      github: 'https://github.com/Sifat2245/ChakriLagbe',
+      live: 'https://chakrilagbe.surge.sh/',
+      date: '2025-04-21'
     }
   ];
 

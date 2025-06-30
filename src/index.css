@@ -24,8 +24,6 @@
 }
 
 
-
-
 body {
   background: var(--background);
   color: var(--text);
@@ -33,6 +31,46 @@ body {
   overflow-x: hidden;
   font-weight: 400;
   line-height: 1.6;
+}
+
+#animate-border {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  z-index: 0;
+}
+
+#animate-border::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background: conic-gradient(
+    from 0deg,
+    #a83c57 0%,
+     #7b1e3b 10%,
+    transparent 30%,
+    transparent 100%
+  );
+  animation: rotateStroke 12s linear infinite;
+  z-index: -1;
+}
+
+#animate-border::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background-color: #1c1c1c;
+  z-index: -1;
+  border-radius: calc(24px - 4px);
+}
+
+@keyframes rotateStroke {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 
