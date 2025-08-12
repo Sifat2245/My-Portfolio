@@ -57,7 +57,7 @@ const AboutMe = () => {
           animate={isInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : {}}
           transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
           id="animate-border"
-          className="glass-card p-12 rounded-3xl max-w-6xl mx-auto card-hover bg-[#ffebf3]/3 animate-border"
+          className="glass-card p-10 md:p-18 rounded-3xl max-w-6xl mx-auto card-hover bg-[#ffebf3]/3 animate-border"
         >
           <div className="text-center mb-10">
             <div className="flex items-center justify-center space-x-3 mb-6">
@@ -81,9 +81,9 @@ const AboutMe = () => {
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+          {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
             {[
-              { number: '1+', label: 'Years Experience', delay: 0.1 },
+              // { number: '1+', label: 'Years Experience', delay: 0.1 },
               { number: '5+', label: 'Full Stack Projects', delay: 0.2 },
               { number: '8+', label: 'Technologies Mastered', delay: 0.3 },
               { number: '90%', label: 'Client Satisfaction', delay: 0.4 }
@@ -103,7 +103,7 @@ const AboutMe = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
         </div>
     </section>

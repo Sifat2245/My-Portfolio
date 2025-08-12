@@ -1,6 +1,14 @@
 import { motion, useInView } from "framer-motion"; // eslint-disable-line no-unused-vars
 import { useRef, useState } from "react";
-import { Mail, MessageCircleMore, MapPin, Send, CheckCircle } from "lucide-react";
+import {
+  Mail,
+  MessageCircleMore,
+  MapPin,
+  Send,
+  CheckCircle,
+} from "lucide-react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -25,12 +33,31 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
+    try {
+      const res = emailjs.send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          email: formData.email, 
+        },
+        import.meta.env.VITE_PUBLIC_KEY
+      );
+      console.log(res.text);
+      setTimeout(() => {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setIsSubmitting(false);
+      }, 2000);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
       setIsSubmitting(false);
-    }, 2000);
+    }
   };
 
   const contactInfo = [
@@ -50,7 +77,8 @@ const Contact = () => {
       icon: MapPin,
       title: "Location",
       content: "Narayanganj, Dhaka, Bangladesh",
-      action: "https://www.google.com/maps/place/Narayanganj/@23.638887,90.4102529,12z/data=!3m1!4b1!4m6!3m5!1s0x3755b10812a520a3:0x6d3af4457bec4c90!8m2!3d23.642881!4d90.488286!16zL20vMDZtNTNj?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D",
+      action:
+        "https://www.google.com/maps/place/Narayanganj/@23.638887,90.4102529,12z/data=!3m1!4b1!4m6!3m5!1s0x3755b10812a520a3:0x6d3af4457bec4c90!8m2!3d23.642881!4d90.488286!16zL20vMDZtNTNj?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D",
     },
   ];
 

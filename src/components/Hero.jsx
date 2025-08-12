@@ -80,7 +80,7 @@ const Hero = () => {
             style={{ transitionDelay: "0.3s" }}
           >
             <motion.p
-              className="text-lg font-mono text-primary font-medium tracking-wide"
+              className="text-lg font-mono text-[#8c0829] font-medium tracking-wide"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -140,11 +140,11 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="space-y-4"
           >
-            <p className="text-lg text-[#ffebf3]/80 leading-relaxed max-w-xl blur-text-hover">
+            <p className="text-lg text-[#ffebf3]/80 leading-relaxed max-w-xl">
               Passionate about crafting modern, responsive web applications that
               blend clean code with engaging user experiences.
             </p>
-            <p className="text-base text-[#ffebf3]/70 leading-relaxed max-w-xl blur-text-hover">
+            <p className="text-base text-[#ffebf3]/70 leading-relaxed max-w-xl">
               Specialized in{" "}
               <span className="font-mono text-primary">React.js</span>,
               <span className="font-mono text-primary"> Node.js</span>,
@@ -216,7 +216,7 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/1xmgmaNXedsXZb30_T704e9ILSdX4u6p_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tUUX2BWB1Zvak4iZn94Ibk-teBrpXHmj/view?usp=sharing"
               target="_blank"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}

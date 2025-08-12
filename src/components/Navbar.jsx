@@ -7,9 +7,7 @@ import {
   User,
   Code,
   Mail,
-  Settings,
-  Braces,
-  GraduationCap,
+  Braces
 } from "lucide-react";
 
 const Navbar = () => {
