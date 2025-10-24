@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import MyProjects from "../components/MyProjects";
 import Contact from "../components/Conntact";
 import LoadingSpinner from "../components/LoadingSpinner";
+import Experience from "../components/Experience";
 
 const LandingPage = () => {
   const [isLoading, setIsloading] = useState(true);
@@ -22,16 +23,17 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen">
       {isLoading ? (
-        <LoadingSpinner></LoadingSpinner>
+        <LoadingSpinner/>
       ) : (
         <>
-          <Navbar></Navbar>
-          <Hero></Hero>
-          <AboutMe></AboutMe>
-          <Skills></Skills>
-          <MyProjects></MyProjects>
-          <Contact></Contact>
-          <Footer></Footer>
+          <Navbar/>
+          <Hero/>
+          <AboutMe/>
+          <Experience/>
+          <Skills/>
+          <MyProjects/>
+          <Contact/>
+          <Footer/>
         </>
       )}
     </div>

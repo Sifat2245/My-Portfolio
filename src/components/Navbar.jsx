@@ -91,7 +91,6 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 whileHover={{ x: 10 }}
-                onClick={() => setIsOpen(false)}
                 className="flex items-center space-x-3 text-[#ffebf3]/80 hover:text-[#8c0829] transition-colors duration-200 p-2 rounded-lg hover:bg-[#8c0829]/10"
               >
                 <item.icon size={20} />

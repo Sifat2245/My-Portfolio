@@ -1,14 +1,6 @@
 import { motion, useInView } from "framer-motion"; // eslint-disable-line no-unused-vars
 import React, { useEffect, useRef, useState } from "react";
-import {
-  Code,
-  Database,
-  Server,
-  Smartphone,
-  Globe,
-  Zap,
-  
-} from "lucide-react";
+import { Code, Database, Server, Smartphone, Globe, Zap, Code2 } from "lucide-react";
 
 const Skills = () => {
   const ref = useRef(null);
@@ -23,9 +15,15 @@ const Skills = () => {
 
   const skills = [
     {
+      name: "Languages",
+      icon: Code2, // from lucide-react (a good generic icon for programming)
+      techs: ["JavaScript", "TypeScript"],
+      color: "from-yellow-400/20 to-blue-500/20",
+    },
+    {
       name: "Frontend Development",
       icon: Code,
-      techs: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
+      techs: ["React.JS", "Next.JS", "HTML5", "CSS3", "Tailwind CSS"],
       color: "from-blue-500/20 to-cyan-500/20",
     },
     {
@@ -51,12 +49,6 @@ const Skills = () => {
       icon: Smartphone,
       techs: ["Responsive Design", "Mobile-First Approach", "PWA Development"],
       color: "from-pink-500/20 to-rose-500/20",
-    },
-    {
-      name: "Performance & UX",
-      icon: Zap,
-      techs: ["Web Optimization", "SEO Best Practices", "Core Web Vitals"],
-      color: "from-yellow-500/20 to-amber-500/20",
     },
   ];
 

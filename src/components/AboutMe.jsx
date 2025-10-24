@@ -1,4 +1,4 @@
-import { useInView, motion } from "framer-motion";// eslint-disable-line no-unused-vars
+import { useInView, motion } from "framer-motion";// eslint-disable-line
 import React, { useEffect, useRef, useState } from "react";
 import { Terminal, Palette } from 'lucide-react';
 

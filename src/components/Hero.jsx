@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Github,
   Linkedin,
@@ -6,7 +6,6 @@ import {
   Download,
   ChevronDown,
   Code2,
-  Target,
 } from "lucide-react";
 import { motion } from "framer-motion"; // eslint-disable-line no-unused-vars
 import { TypeAnimation } from "react-type-animation";
@@ -168,7 +167,7 @@ const Hero = () => {
                   href={social.href}
                   whileHover={{ scale: 1.2, y: -8, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#8c0829]/10 transition-all duration-300 group card-hover"
+                  className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#8c0829]/20 transition-all duration-300 group card-hover"
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   <social.icon

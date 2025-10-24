@@ -14,6 +14,48 @@ const MyProjects = () => {
   // will connect to the server soon
   const projects = [
     {
+      id: 1,
+      title: "United Pets - Pet Adoption Platform",
+      description:
+        "United Pets is a full-stack platform for pet adoption, donations, and campaigns. It allows users to add pets, request donations, contribute to causes, and manage pet-related campaigns. Features include user roles, secure authentication, Stripe payments, donation tracking, and admin controls.",
+      image:
+        "https://res.cloudinary.com/djoytexuc/image/upload/v1754143175/Screenshot_2025-08-02_195650_u6cuid.png",
+      category: "Full Stack",
+      tech: [
+        "React",
+        "Tailwind",
+        "Firebase",
+        "Node JS",
+        "Express JS",
+        "MongoDB",
+        "Shadcn",
+        "Stripe",
+      ],
+      github: "https://github.com/Sifat2245/United_pets_client",
+      live: "https://united-pets-5dd15.web.app/",
+      date: "2025-07-25",
+      devTime: "8 Days",
+      teamSize: "Solo Project",
+      codeLines: "6000+",
+      status: "Completed",
+      features: [
+        "A fully functional platform enabling users to list pets for adoption, manage adoption requests, create and support donation campaigns — all with seamless user flows and real-time updates.",
+        "Implemented secure email/password login along with OAuth providers (Google, Twitter), plus JWT-based access tokens, supporting distinct user roles (user & admin) with protected dashboards and routes.",
+        "Advanced infinite scrolling on pet listing and donation campaigns pages, combined with powerful search and category filters for a smooth and intuitive browsing experience.",
+        "Enabled secure, seamless payments via Stripe, allowing users to donate specific amounts with card details securely handled, and real-time tracking of donations on campaigns.",
+        "Created feature-rich dashboards: users can add/update/delete pets, manage donation campaigns, track donations; admins have full control over users, pets, and campaigns, including role management and moderation.",
+      ],
+      challenges: [
+        "Implementing infinite scrolling with efficient data fetching and caching",
+        "Integrating Stripe securely for handling payments and donations",
+        "Building a role-based authentication system with JWT and OAuth providers",
+        "Implementing a rich text editor for pet descriptions with markdown support",
+      ],
+      improvements: [
+        "Convert the web application into a Progressive Web App (PWA) for mobile-friendly experience",
+      ],
+    },
+    {
       id: 2,
       title: "Asian - Restaurant Management System",
       description:
@@ -24,10 +66,10 @@ const MyProjects = () => {
       github: "https://github.com/Sifat2245/Asian-client",
       live: "https://asian-web-app.web.app/",
       date: "2025-05-26",
-      devTime: '6 Days',
-      teamSize: 'Solo Project',
-      codeLines: '4000+',
-      status: 'Completed',
+      devTime: "6 Days",
+      teamSize: "Solo Project",
+      codeLines: "4000+",
+      status: "Completed",
       features: [
         "Smooth Online Food Ordering – Customers can browse dishes, view details, and place orders directly through a simple purchase form.",
         "Smart Stock Control – The system prevents purchases when items are out of stock and limits buying to available quantities.",
@@ -52,10 +94,10 @@ const MyProjects = () => {
       github: "https://github.com/Sifat2245/Roshoi-bondhu-client",
       live: "https://roshoi-bondhu-app-8e8ae.web.app/",
       date: "2025-5-02",
-      devTime: '5 Days',
-      teamSize: 'Solo Project',
-      codeLines: '3000+',
-      status: 'Completed',
+      devTime: "5 Days",
+      teamSize: "Solo Project",
+      codeLines: "3000+",
+      status: "Completed",
       features: [
         "Find Top Recipes Easily – See the most popular recipes loved by other users, all ranked by likes.",
         "Save Your Favorites – Add recipes you love to your wishlist so you can find them quickly later.",
@@ -63,10 +105,10 @@ const MyProjects = () => {
         "Discover by Cuisine – Filter recipes by type, like Italian, Mexican, or Indian, to match your taste.",
         "Beautiful & Easy to Use – A clean, mobile-friendly design that works smoothly on phones, tablets, and computers.",
       ],
-      challenges:[
-        'creating the authentication modal using Framer motion and toggle Sign in and Sign up',
-        'designing Dashboard',
-      ]
+      challenges: [
+        "creating the authentication modal using Framer motion and toggle Sign in and Sign up",
+        "designing Dashboard",
+      ],
     },
     {
       id: 4,
@@ -79,10 +121,10 @@ const MyProjects = () => {
       github: "https://github.com/Sifat2245/ChakriLagbe",
       live: "https://chakrilagbe.surge.sh/",
       date: "2025-04-21",
-      devTime: '5 Days',
-      teamSize: 'Solo Project',
-      codeLines: '2000+',
-      status: 'Completed',
+      devTime: "5 Days",
+      teamSize: "Solo Project",
+      codeLines: "2000+",
+      status: "Completed",
       features: [
         "Explore Companies in One Place – Browse a variety of companies and see all their job openings without visiting multiple sites.",
         "Detailed Job Info at a Glance – View salary, job type, requirements, and apply directly to the company’s website.",
@@ -90,48 +132,6 @@ const MyProjects = () => {
         "Easy Login & Sign Up – Join using your email or Google account, with a simple password reset option if you forget.",
         "Mobile-Friendly & Smooth Design – Works perfectly on phones, tablets, and computers with a clean, modern look.",
       ],
-    },
-    {
-      id: 1,
-      title: "United Pets - Pet Adoption Platform",
-      description:
-        "United Pets is a full-stack platform for pet adoption, donations, and campaigns. It allows users to add pets, request donations, contribute to causes, and manage pet-related campaigns. Features include user roles, secure authentication, Stripe payments, donation tracking, and admin controls.",
-      image:
-        "https://res.cloudinary.com/djoytexuc/image/upload/v1754143175/Screenshot_2025-08-02_195650_u6cuid.png",
-      category: "Full Stack",
-      tech: [
-        "React",
-        "Tailwind",
-        "Firebase",
-        "Node JS",
-        "Express JS",
-        "MongoDB",
-        "Shadcn",
-        "Stripe",
-      ],
-      github: "https://github.com/Sifat2245/United_pets_client",
-      live: "https://united-pets-5dd15.web.app/",
-      date: "2025-07-25",
-      devTime: '8 Days',
-      teamSize: 'Solo Project',
-      codeLines: '6000+',
-      status: 'Completed',
-      features:[
-        'A fully functional platform enabling users to list pets for adoption, manage adoption requests, create and support donation campaigns — all with seamless user flows and real-time updates.',
-        'Implemented secure email/password login along with OAuth providers (Google, Twitter), plus JWT-based access tokens, supporting distinct user roles (user & admin) with protected dashboards and routes.',
-        'Advanced infinite scrolling on pet listing and donation campaigns pages, combined with powerful search and category filters for a smooth and intuitive browsing experience.',
-        'Enabled secure, seamless payments via Stripe, allowing users to donate specific amounts with card details securely handled, and real-time tracking of donations on campaigns.',
-        'Created feature-rich dashboards: users can add/update/delete pets, manage donation campaigns, track donations; admins have full control over users, pets, and campaigns, including role management and moderation.'
-      ],
-      challenges: [
-        'Implementing infinite scrolling with efficient data fetching and caching',
-        'Integrating Stripe securely for handling payments and donations',
-        'Building a role-based authentication system with JWT and OAuth providers',
-        'Implementing a rich text editor for pet descriptions with markdown support'
-      ],
-      improvements:[
-         "Convert the web application into a Progressive Web App (PWA) for mobile-friendly experience"
-      ]
     },
   ];
 
@@ -259,7 +259,14 @@ const MyProjects = () => {
                   </div>
                 </div>
 
-                <p className="text-[#ffebf3]/80 leading-relaxed">
+                <p
+                  className="text-[#ffebf3]/80 leading-relaxed overflow-hidden text-ellipsis"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
                   {project.description}
                 </p>
 

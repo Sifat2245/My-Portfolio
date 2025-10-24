@@ -15,53 +15,30 @@ export default function Experience() {
 
   const experiences = [
     {
-      id: 1,
-      type: 'work',
-      title: 'Full Stack Developer',
-      company: 'Freelance',
-      location: 'Remote',
-      duration: '2023 - Present',
-      description: 'Developing full-stack web applications using MEARN stack. Built 5+ complete projects including e-commerce platforms, task management systems, and social media dashboards.',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Tailwind CSS'],
-      achievements: [
-        'Successfully delivered 5+ full-stack projects',
-        'Implemented advanced animations with Framer Motion',
-        'Built responsive UIs with modern design principles',
-        'Integrated secure authentication systems with JWT'
-      ]
-    },
-    {
-      id: 2,
-      type: 'learning',
-      title: 'MEARN Stack Development',
-      company: 'Self-Learning & Practice',
-      location: 'Bangladesh',
-      duration: '2023 - Present',
-      description: 'Intensive learning and hands-on practice with modern web development technologies. Focused on building real-world projects and mastering industry best practices.',
-      technologies: ['JavaScript', 'React.js', 'Node.js', 'MongoDB', 'Firebase'],
-      achievements: [
-        'Mastered React.js ecosystem and modern hooks',
-        'Built RESTful APIs with Node.js and Express.js',
-        'Implemented database design with MongoDB',
-        'Deployed applications on Vercel and Netlify'
-      ]
-    },
-    {
-      id: 3,
-      type: 'project',
-      title: 'Frontend Development Focus',
-      company: 'Personal Projects',
-      location: 'Bangladesh',
-      duration: '2023',
-      description: 'Specialized in creating beautiful, responsive user interfaces with advanced animations and modern design patterns.',
-      technologies: ['React.js', 'Tailwind CSS', 'Framer Motion', 'CSS3'],
-      achievements: [
-        'Created pixel-perfect responsive designs',
-        'Implemented complex animations and transitions',
-        'Optimized performance and user experience',
-        'Built reusable component libraries'
-      ]
-    }
+  id: 1,
+  type: 'work',
+  title: 'Frontend Developer',
+  company: 'Softvence Agency',
+  location: 'On Site',
+  duration: 'October 2025 - Present',
+  description:
+    'As a Frontend Developer at Softvence Agency, I build and maintain dynamic web applications using the MERN stack. I focus on delivering clean, optimized, and visually appealing user interfaces with modern design principles and smooth performance.',
+  technologies: [
+    'JavaScript',
+    'TypeScript',
+    'React.js',
+    'Next.js',
+    'Tailwind CSS',
+    'Shadcn'
+  ],
+  achievements: [
+    'Delivered multiple high-performing web apps including e-commerce and dashboard systems',
+    'Enhanced site performance by optimizing Core Web Vitals and implementing lazy loading',
+    'Developed responsive and accessible interfaces using React and Tailwind CSS',
+    'Collaborated with backend team to design RESTful APIs and improve system scalability'
+  ]
+}
+
   ];
 
   const getIcon = (type) => {

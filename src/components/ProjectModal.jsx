@@ -14,6 +14,7 @@ import {
 export default function ProjectModal({ project, isOpen, onClose }) {
   if (!project) return null;
 
+
   const modalVariants = {
     hidden: {
       opacity: 0,
