@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion"; // eslint-disable-line no-unused-vars
 import React, { useEffect, useRef, useState } from "react";
-import { Code, Database, Server, Smartphone, Globe, Zap, Code2 } from "lucide-react";
+import { Code, Database, Server, Smartphone, Globe, Code2 } from "lucide-react";
 
 const Skills = () => {
   const ref = useRef(null);
@@ -16,7 +16,7 @@ const Skills = () => {
   const skills = [
     {
       name: "Languages",
-      icon: Code2, // from lucide-react (a good generic icon for programming)
+      icon: Code2,
       techs: ["JavaScript", "TypeScript"],
       color: "from-yellow-400/20 to-blue-500/20",
     },
@@ -35,13 +35,19 @@ const Skills = () => {
     {
       name: "Database Management",
       icon: Database,
-      techs: ["MongoDB"],
+      techs: ["MongoDB", "PostgreSQL"],
       color: "from-purple-500/20 to-violet-500/20",
     },
     {
-      name: "Deployment",
+      name: "DevOps & Deployment",
       icon: Globe,
-      techs: ["Firebase", "Vercel", "Netlify", "Git & GitHub"],
+      techs: [
+        "CI/CD",
+        "GitHub Actions",
+        "VPS Deployment",
+        "AWS",
+        "Git & GitHub",
+      ],
       color: "from-orange-500/20 to-red-500/20",
     },
     {
@@ -91,11 +97,12 @@ const Skills = () => {
           Technologies and tools I use to build amazing web applications
         </p>
       </div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20"
       >
         {skills.map((skill, index) => (
           <motion.div
@@ -153,3 +160,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+
